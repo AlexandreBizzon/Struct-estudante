@@ -23,7 +23,7 @@ cadastrar(int ale)
 		printf("Nome: ");
 		gets(vet_estud[ale].nome);
 		
-		printf("Endereço: ");
+		printf("EndereÃ§o: ");
 		gets(vet_estud[ale].endereco);
 	
 		printf("Curso: ");
@@ -33,11 +33,11 @@ cadastrar(int ale)
 		gets(vet_estud[ale].email);
 		fflush(stdin);
 			
-		printf("Média-vestibular: ");
+		printf("MÃ©dia-vestibular: ");
 		scanf("%f", &vet_estud[ale].media_vestibular);
 		fflush(stdin);
 		
-		printf("Colocação: ");
+		printf("ColocaÃ§Ã£o: ");
 		scanf("%d", &vet_estud[ale].colocacao);
 		fflush(stdin);
 }
@@ -47,7 +47,7 @@ consultar()
 	int i,matricula_aux;
 	char encontrou = 'N';
 	
-	printf("Forneça a matricula para verificação: ");
+	printf("ForneÃ§a a matricula para verificaÃ§Ã£o: ");
 	fflush(stdin);
 	scanf("%d", &matricula_aux);
 	
@@ -59,11 +59,11 @@ consultar()
 			printf("\n\n");
 			printf("\nMatricula.............: %d", vet_estud[i].matricula);
 			printf("\nNome..................: %s", vet_estud[i].nome);
-			printf("\nEndereço..............: %s", vet_estud[i].endereco);
+			printf("\nEndereÃ§o..............: %s", vet_estud[i].endereco);
 			printf("\nCurso.................: %s", vet_estud[i].curso);
 			printf("\nEmail.................: %s", vet_estud[i].email);
-			printf("\nMédia Vestibular......: %f", vet_estud[i].media_vestibular);
-			printf("\nColocação.............: %d", vet_estud[i].colocacao);
+			printf("\nMÃ©dia Vestibular......: %f", vet_estud[i].media_vestibular);
+			printf("\nColocaÃ§Ã£o.............: %d", vet_estud[i].colocacao);
 			getch();
 		}
 	}
@@ -80,7 +80,7 @@ alterar()
 	int i,matricula_aux;
 	char encontrou = 'N';
  		
-	printf("Forneça a matricula que deseja alterar: ");
+	printf("ForneÃ§a a matricula que deseja alterar: ");
 	fflush(stdin);
 	scanf("%d", &matricula_aux);
 	
@@ -95,7 +95,7 @@ alterar()
 			printf("Nome: ");
 			gets(vet_estud[i].nome);
 			
-			printf("Endereço: ");
+			printf("EndereÃ§o: ");
 			gets(vet_estud[i].endereco);
 			
 			printf("Curso: ");
@@ -105,11 +105,11 @@ alterar()
 			gets(vet_estud[i].email);
 			fflush(stdin);
 				
-			printf("Média-vestibular: ");
+			printf("MÃ©dia-vestibular: ");
 			scanf("%f", &vet_estud[i].media_vestibular);
 			fflush(stdin);
 			
-			printf("Colocação: ");
+			printf("ColocaÃ§Ã£o: ");
 			scanf("%d", &vet_estud[i].colocacao);
 			fflush(stdin);
 		}
@@ -123,14 +123,11 @@ alterar()
 
 excluir(int ale)
 {
-	//1- fornecer a matricula
-	//2- encontrar a maticula no vetor struct
-	//3- apagar da memoria todos os dados do estudante
 	
 	int i,matricula_aux,y,indice_aux;
 	char encontrou = 'N';
  		
-	printf("Forneça a matricula que deseja excluir: ");
+	printf("ForneÃ§a a matricula que deseja excluir: ");
 	fflush(stdin);
 	scanf("%d", &matricula_aux);
 	
@@ -196,7 +193,7 @@ main()
 		printf("3 - Alterar..........: \n");
 		printf("4 - Excluir..........: \n");
 		printf("5 - SAIR.............: \n");
-		printf("\nEntre com sua opção: ");
+		printf("\nEntre com sua opÃ§Ã£o: ");
 		scanf("%c", &opcao);
 		
 		switch (opcao)
